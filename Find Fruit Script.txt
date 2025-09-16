@@ -21,7 +21,7 @@ if worldMap[placeId] then
 
     -- Load UI song song - BFInfoUi
     task.spawn(function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Chiriku2013/BFInfoUi/refs/heads/main/BFInfoUi.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/kaimm2/BloxFruits/refs/heads/main/ui.txt"))()
     end)
     
 --// Cấu hình chọn team
@@ -48,7 +48,7 @@ local function Notify(title, text, dur, titleColor, textColor)
 end
 
 --// Thông báo giới thiệu
-Notify("Fruits Finder", "By Tthanhhub", 5, Color3.fromRGB(0,255,0), Color3.fromRGB(255,255,0))
+Notify("Fruits Finder", "By Tthanhhub", 5, Color3.fromRGB(0,255,0), Color3.fromRGB(255,255,0))
 
 --// Bảng độ hiếm
 local Rarity = {
@@ -188,4 +188,5 @@ end
 
 else
     game.Players.LocalPlayer:Kick("This script is not supported in this game, please try again with Blox Fruits!")
+
 end
