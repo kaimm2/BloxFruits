@@ -1,0 +1,23 @@
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+
+local normalSpeed = 16
+local boostedSpeed = 100
+
+local function boostCharacter(char)
+    local humanoid = char:WaitForChild("Humanoid")
+    humanoid.WalkSpeed = boostedSpeed
+
+    local RunService = game:GetService("RunService")
+    RunService.RenderStepped:Connect(function()
+        if humanoid.WalkSpeed ~= boostedSpeed then
+            humanoid.WalkSpeed = boostedSpeed
+        end
+    end)
+end
+
+if player.Character then
+    boostCharacter(player.Character)
+end
+
+player.CharacterAdded:Connect(boostCharacter)
