@@ -1,0 +1,26 @@
+local Window = Rayfield:CreateWindow({
+    Name = "Tthanhhub",
+    LoadingTitle = "Loading......",
+    LoadingSubtitle = "by Tthanh",
+    ShowText = "Tthanhhub",
+    Theme = "Default",
+    ToggleUIKeybind = "K",
+    Icon = 113191664721910,
+
+    ConfigurationSaving = {
+        Enabled = true,
+        FolderName = nil,
+        FileName = "ExecutorConfig"
+    },
+
+    KeySystem = true,
+    KeySettings = {
+        Title = "Tthanhhub",
+        Subtitle = "Key Check Tester",
+        Note = "Hi",
+        FileName = "cc.json",
+        SaveKey = true,
+        GrabKeyFromSite = false,
+        Key = {""}
+    }
+})
